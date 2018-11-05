@@ -1,0 +1,76 @@
+/*
+ * Copyright (c) 2018. Vojin Petrovic.
+ */
+
+.vojjinsel_maindiv {
+	opacity: 0;
+	max-height: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	background: white;
+	padding: 5px 10px;
+	overflow-y: scroll;
+	border-radius: 4px;
+	height: 0;
+	transition: opacity 0.3s ease, height 2s ease;
+}
+.vojjinsel_active {
+	height: auto;
+	opacity: 1;
+}
+.vojjinsel_p,.vojjinsel_p_empty,.vojjinsel_p_max {
+	cursor: pointer;
+	margin: 2px 0;
+	padding: 0 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #444;
+	background: white;
+}
+.vojjinsel_p_empty {
+	color: white;
+	background: #990000;
+	text-align:center;
+	padding:5px 10px;
+}
+.vojjinsel_p_max {
+	color: white;
+	background: #0099ff;
+	text-align:center;
+	padding:5px 10px;
+}
+
+.vojjinsel_p:hover {
+	background: #e2e2e2;
+}
+
+.vojjinsel_important {
+	margin-bottom: 2px !important;
+	width: 100% !important;
+}
+.vojjinsel_wrap {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.vojjinsel_wrap_span {
+	height: 26px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 20px;
+}
+.vojjinsel_wrap_arrow {
+	border-color: #888 transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px 4px 0 4px;
+	height: 0;
+	left: 50%;
+	margin-left: -4px;
+	margin-top: -2px;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
